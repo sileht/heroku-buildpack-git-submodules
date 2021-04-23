@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cd "$1"
+echo "Checkout submodules..."
+git submodule -q update --init --recursive
+git submodule status
